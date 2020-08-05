@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza_Test</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section id="pizzaMenu">
+      <div>
+        <h1 class="title">Pizza</h1>
+        <div class="menu">
+          <div>
+            <img class="pizzaImage fade-in" src="images/Pizza_A.jpg" alt="" />
+          </div>
+          <div>
+            <h3 id="pizzaA"></h3>
+            <p id="pizzaAPrice"></p>
+            <input
+              type="radio"
+              name="pizza"
+              id="pizza"
+              value="pizza_a"
+              onclick="pizzaChosen('Pizza_A')"
+            />
+          </div>
+        </div>
+        <div class="menu">
+          <div>
+            <img class="pizzaImage fade-in" src="images/Pizza_B.jpg" alt="" />
+          </div>
+          <div>
+            <h3 id="pizzaB"></h3>
+            <p id="pizzaBPrice"></p>
+            <input
+              type="radio"
+              name="pizza"
+              id="pizza"
+              value="pizza_b"
+              onclick="pizzaChosen('Pizza_B')"
+            />
+          </div>
+        </div>
+        <div class="menu">
+          <div>
+            <img class="pizzaImage fade-in" src="images/Pizza_C.jpg" alt="" />
+          </div>
+          <div>
+            <h3 id="pizzaC"></h3>
+            <p id="pizzaCPrice"></p>
+            <input
+              type="radio"
+              name="pizza"
+              id="pizza"
+              value="pizza_c"
+              onclick="pizzaChosen('Pizza_C')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="size">
+      <div class="sizeChoose">
+        <h1 class="title">Size</h1>
+        <div class="pizzaSize">
+          <input
+            type="radio"
+            name="pizzaSize"
+            id="smallPizza"
+            value="small"
+            onclick="sizeChosen('small')"
+          />
+          <label for="smallPizza">Small</label>
+        </div>
+        <div class="pizzaSize">
+          <input
+            type="radio"
+            name="pizzaSize"
+            id="mediumPizza"
+            value="medium"
+            onclick="sizeChosen('medium')"
+            checked
+          />
+          <label for="mediumPizza">Medium</label>
+        </div>
+        <div class="pizzaSize">
+          <input
+            type="radio"
+            name="pizzaSize"
+            id="largePizza"
+            value="large"
+            onclick="sizeChosen('large')"
+          />
+          <label for="largePizza">Large</label>
+        </div>
+      </div>
+    </section>
+
+    <section id="topping">
+      <div class="toppingPart">
+        <h1 class="title">Toppings</h1>
+        <table class="toppingList" align="center">
+          <tr align="left">
+            <td>
+              <input
+                type="checkbox"
+                name="Avocado"
+                id="Avocado"
+                class="topping"
+                onclick="toppingChosen('Avocado')"
+              />
+              <label for="Avocado">Avocado</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Lobster"
+                id="Lobster"
+                class="topping"
+                onclick="toppingChosen('Lobster')"
+              />
+              <label for="Lobster">Lobster</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Bacon"
+                id="Bacon"
+                class="topping"
+                onclick="toppingChosen('Bacon')"
+              />
+              <label for="Bacon">Bacon</label>
+            </td>
+          </tr>
+          <tr align="left">
+            <td>
+              <input
+                type="checkbox"
+                name="Broccoli"
+                id="Broccoli"
+                class="topping"
+                onclick="toppingChosen('Broccoli')"
+              />
+              <label for="Broccoli">Broccoli</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Oyster"
+                id="Oyster"
+                class="topping"
+                onclick="toppingChosen('Oyster')"
+              />
+              <label for="Oyster">Oyster</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Duck"
+                id="Duck"
+                class="topping"
+                onclick="toppingChosen('Duck')"
+              />
+              <label for="Duck">Duck</label>
+            </td>
+          </tr>
+          <tr align="left">
+            <td>
+              <input
+                type="checkbox"
+                name="Onions"
+                id="Onions"
+                class="topping"
+                onclick="toppingChosen('Onions')"
+              />
+              <label for="Onions">Onions</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Salmon"
+                id="Salmon"
+                class="topping"
+                onclick="toppingChosen('Salmon')"
+              />
+              <label for="Salmon">Salmon</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Ham"
+                id="Ham"
+                class="topping"
+                onclick="toppingChosen('Ham')"
+              />
+              <label for="Ham">Ham</label>
+            </td>
+          </tr>
+          <tr align="left">
+            <td>
+              <input
+                type="checkbox"
+                name="Zucchini"
+                id="Zucchini"
+                class="topping"
+                onclick="toppingChosen('Zucchini')"
+              />
+              <label for="Zucchini">Zucchini</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Tuna"
+                id="Tuna"
+                class="topping"
+                onclick="toppingChosen('Tuna')"
+              />
+              <label for="Tuna">Tuna</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Sausage"
+                id="Sausage"
+                class="topping"
+                onclick="toppingChosen('Sausage')"
+              />
+              <label for="Sausage">Sausage</label>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="price">
+      <div id="price">
+        <h1>Price</h1>
+        <h3 id="priceTag"></h3>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

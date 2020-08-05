@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+}
+
+.title {
+  padding-top: 10px;
+}
+
+/* Pizza Menu Section */
+#pizzaMenu {
+  background-color: #ffd36b;
+  padding-bottom: 10px;
+}
+
+.menu {
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+}
+
+.pizzaImage {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Pizza Size Section */
+
+#size {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.pizzaSize {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.pizzaSize label {
+  display: block;
+}
+
+/* Pizza Topping Section */
+
+#topping {
+  margin-top: 50px;
+}
+
+td {
+  padding: 25px;
+}
+
+/* animation */
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
